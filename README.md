@@ -18,3 +18,8 @@ product can send alert to users and take help from users nearby.
       
 ## Note
    This application has OAuth signin and  post feasture running. Rest is a read-only mode.
+   
+## CONTRIBUTERS
+### [SHIVA MALL](https://github.com/Shivamall)
+### [SAGAR KALYAN](https://github.com/sagarkalyan)
+### [Harmanpreet Gill](https://github.com/iamharmangill)
