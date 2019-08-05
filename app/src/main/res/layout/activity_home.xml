@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".Activities.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/back_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/name_app"
+                    android:id="@+id/post_query_heading"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/days_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/days_left"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/toolbar"
+            android:textSize="22sp"
+            android:layout_marginTop="180dp"/>
+        <!--/>-->
+
+        <LinearLayout
+            android:id="@+id/main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/post_detail"
+                    android:layout_width="135dp"
+                    android:layout_height="180dp"
+                    android:src="@mipmap/sendimage" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="135dp"
+                    android:layout_height="180dp"
+                    android:src="@mipmap/messageimage"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="-45dp"
+
+                android:layout_centerHorizontal="true"
+                >
+
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="135dp"
+                    android:layout_height="180dp"
+                    android:src="@mipmap/alertimage" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="135dp"
+                    android:layout_height="180dp"
+                    android:src="@mipmap/profileimage"
+                    android:layout_marginLeft="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_your_period_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add your Period"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="@drawable/addperiodbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/main_menu"
+            android:textColor="@color/colorPrimary"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/readmore_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="asxmaslxkslxmls.xLxsxascxassacascascascsaacsscscasscas..............
+            ascas;mca;mc;ac;a;ca;c'a,c'a,csaasc"
+            android:textSize="18sp"
+
+            android:layout_below="@+id/add_your_period_button"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/readmore_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="Read More"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:layout_centerHorizontal="true"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress_bar"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</layout>
